@@ -28,7 +28,8 @@ src/
   types.ts              # Core type definitions (AgentRecord, AgentConfig, SubagentType, etc.)
   env.ts                # Environment helpers
   ui/
-    agent-widget.ts     # TUI widget: spinners, token counts, status icons
+    agent-widget.ts           # TUI widget: spinners, token counts, status icons
+    conversation-viewer.ts    # Live full-screen overlay showing an agent's streaming conversation (subscribes to AgentSession events)
 ```
 
 ## Build
