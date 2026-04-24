@@ -2,6 +2,8 @@
 
 Third-party pi extension (`@tintinweb/pi-subagents`) — Claude Code-style autonomous sub-agents for pi. This is a local fork from `tintinweb/pi-subagents`.
 
+**Activation status:** not listed in `~/.pi/agent/settings.json` `packages[]` as of 2026-04-23, so none of the `Agent` / `get_subagent_result` / `steer_subagent` tools or the `/agents` command are loaded by pi on this machine. Delegation goes through `zeuscli loop` / `zeuscli scout` instead (see `~/workspace/AGENTS.md`). If you need this extension, add `~/workspace/pi-subagents` to `packages[]` and re-launch pi.
+
 ## What It Does
 
 Registers three LLM-callable tools (`Agent`, `get_subagent_result`, `steer_subagent`) and the `/agents` command. Agents run in isolated pi sessions with their own tools, system prompts, and models. Supports foreground, background, and parallel execution.
